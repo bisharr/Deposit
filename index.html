@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ABC BANK</title>
+  </head>
+  <body>
+    <div class="center-div">
+      <h1>ABC BANK</h1>
+      <label id="errMsg">....</label>
+
+      <div id="login-portal">
+        <h3>Login</h3>
+        <br />
+        <label for="lAccNo">Acount No:</label><br />
+        <input type="text" id="lAccNo" required /><br />
+        <label for="Pin">Pin No:</label><br />
+        <input type="text" id="lAccPin" required /><br />
+        <button id="login-btn">Login</button><br />
+        <label id="swithToReg">Don't have an account ? Register</label>
+      </div>
+      <br />
+
+      <div id="register-portal">
+        <h3>Register</h3>
+        <label for="rAccNo">Name</label><br />
+        <input type="text" id="rAccName" required /><br />
+        <label for="rAccNo">Acount no:</label><br />
+        <input type="text" id="rAccNo" required /><br />
+        <label for="Pin">Pin No:</label><br />
+        <input type="text" id="rAccPin" required /><br />
+        <label for="Pin">Confirm Pin:</label><br />
+        <input type="text" id="rConAccPin" required /><br />
+        <button id="register-btn">Register</button><br />
+        <label id="swithToLogIn"> have an account ? Login</label>
+      </div>
+      <br />
+
+      <div class="portal" id="portal">
+        <h3 id="userName">...</h3>
+        <h3 id="totalBa">...</h3>
+        <div class="depotit-portal">
+          <h4>Deposit</h4>
+          <label>Enter Amount</label><br />
+          <input type="text" id="deposit-amt" required /><br />
+          <button id="dep-submit">Deposit</button>
+        </div>
+        <div class="withdraw-portal">
+          <h4>Withdraw</h4>
+          <label>Enter Withdraw Amount</label><br />
+          <input type="text" id="withdraw-amt" required /><br />
+          <button id="withdraw-submit">Withdraw</button>
+        </div>
+        <div class="transfer-portal">
+          <h4>Transfer</h4>
+          <label>Enter Transfer Amount</label><br />
+          <input type="text" id="transfer-amt" required /><br />
+          <label>Enter Transfer Acount No:</label><br />
+          <input type="text" id="transfer-act-no" required /><br />
+          <button id="transfer-submit">transfer</button>
+        </div>
+        <br />
+        <div class="options">
+          <h3>Please Select an Option</h3>
+          <button id="deposit-btn">Deposit</button>
+          <button id="withdraw-btn">Withdraw</button>
+          <button id="transfer-btn">Transfer</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

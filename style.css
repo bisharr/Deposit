@@ -1,0 +1,50 @@
+.center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
+}
+#register-portal,
+#portal {
+  display: none;
+}
+#errMsg {
+  color: red;
+}
+#swithToReg,
+#swithToLogIn {
+  color: dodgerblue;
+  cursor: pointer;
+}
+#swithToReg,
+#swithToLogIn:hover {
+  color: rgb(38, 114, 190);
+}
+h3,
+h4 {
+  display: inline-block;
+}
+input {
+  padding: 5px 2px;
+  border: 1px solid black;
+  border-radius: 7px;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.858);
+}
