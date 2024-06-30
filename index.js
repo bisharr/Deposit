@@ -3,6 +3,7 @@ window.onload = function () {
 
   document.getElementById('swithToLogIn').onclick = switchToLogIN;
   document.getElementById('login-btn').onclick = loginValidtion;
+  document.getElementById('register-btn').onclick = registerValidation;
 
   function switchToReg() {
     document.getElementById('register-portal').style.display = 'inline-block';
@@ -24,7 +25,27 @@ window.onload = function () {
     var LPinNo = document.getElementById('lAccPin').value;
 
     if (LAccNo.match(AccNoPat) && LPinNo.match(accPinPat)) {
-      alert('Welcome');
+      alert('Welcome to your account');
+    } else {
+      alert('Please enter Valid details');
+    }
+  }
+
+  //register validation...
+
+  function registerValidation() {
+    var rAccName = document.getElementById('rAccName').value;
+    var rAccNo = document.getElementById('rAccNo').value;
+    var rAccPin = document.getElementById('rAccPin').value;
+    var rConAccPin = document.getElementById('rConAccPin').value;
+
+    if (
+      rAccName !== null &&
+      rAccNo.match(AccNoPat) &&
+      rAccPin.match(accPinPat) &&
+      rAccPin == rConAccPin
+    ) {
+      alert('account registered successfully');
     } else {
       alert('Please enter Valid details');
     }
