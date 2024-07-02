@@ -8,7 +8,10 @@
   padding: 30px;
 }
 #register-portal,
-#portal {
+#portal,
+#depotit-portal,
+#withdraw-portal,
+#transfer-portal {
   display: none;
 }
 #errMsg {
